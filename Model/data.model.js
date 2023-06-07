@@ -1,22 +1,14 @@
 const mongoose = require('mongoose')
 const dataschema = mongoose.Schema({
-    end_year:Number,
-    intensity: Number,
-    secto: String,
-    topic: String,
-    insight: String,
-    url: String,
-    region: String,
-    start_year:Number,
-    impact: Number,
-    added: Date,
-    published: Date,
-    country: String,
-    relevance: Number,
-    pestle: String,
-    source: String,
-    title: Number,
-    likelihood: Number
+    First_Name: String,
+    Last_Name: String,
+    Email: String,
+    Country: String,
+    State: String,
+    City: String,
+    Gender: String,
+    Date_of_Birth: Date,
+    Age: Number
 })
 
 const DataModel = mongoose.model("data", dataschema)

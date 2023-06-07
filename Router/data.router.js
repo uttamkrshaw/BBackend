@@ -2,7 +2,7 @@ const express = require('express')
 const dataRouter = express.Router()
 const {DataModel} = require("../Model/data.model")
 
-dataRouter.get('/get',async(req,res)=>{
+dataRouter.get('/get', async (req, res) => {
     try {
         const data = await DataModel.find()
         res.status(200).send(data)
@@ -11,4 +11,8 @@ dataRouter.get('/get',async(req,res)=>{
     }
 })
 
-module.exports ={dataRouter}
+
+
+module.exports = {
+    dataRouter
+}
