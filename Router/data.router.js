@@ -11,6 +11,14 @@ dataRouter.get('/get', async (req, res) => {
     }
 })
 
+dataRouter.post('/add', async (req, res) => {
+    try {
+        console.log("payload",req.params)
+        res.send(200).send("Testing")
+    } catch (error) {
+        res.status(400).send(error)
+    }
+})
 
 
 module.exports = {
